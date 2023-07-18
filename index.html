@@ -1,0 +1,126 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+ <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+	
+</head>
+<body style="text-align:center;" id="body">
+   <h2 align="center" > INSERT DETAILS </H2>
+  <button type="button" onclick="changecolor()">
+      Change Color
+   </button>   
+<TABLE ALIGN="center" id="table" >
+<script>
+        function changecolor() {
+            // Generating random color each time
+            let color = "#" + (Math.random() * 14564345 | 0).toString(16);
+ 
+            $("body").css("background-color", color);
+			let colo = "#" + (Math.random() * 11111111 | 0).toString(16);
+ 
+            $("table").css("background-color", colo);
+        }
+		 
+    </script>
+<form action="insert.php" method="post">
+ <TR>
+  <TD> 
+   <div>
+    <label for="fn">FIRST NAME<font color="red">*</font></label>
+  </td>
+ <TD>
+    <input type="text" id="fn" name="fname" required><br><BR>
+  </div>
+  </td> 
+ </TR>
+<TR>
+ <TD>
+  <div>
+  <label for="ln">
+LAST NAME <font color="red">*</font></label>
+ </TD>
+ <TD>
+  <input type="text" id="ln" name="lname" required><br><BR>
+    </div>
+  </td> 
+ </TR>
+<TR>
+ <TD>
+   <div><label for="ln"  for="em">
+DOB<font color="red">*</font></label>
+  </TD>
+  <TD>
+ <input type="date" id="em" name="dob" required><br><BR></div>
+  </td> 
+ </TR>
+<TR>
+ <TD>
+   <div>
+     <label for="pass">
+Parent's Name<font color="red">*</font></label>
+   </TD>
+  <TD>
+<input type="text" id="pass" name="part" required><br><BR>
+   </div>
+  </td>
+ </TR>
+ 
+<TR> 
+ <TD>
+    <div> <label for="M">
+Address  </label><font color="red">*</font>
+ </TD>
+ <TD>
+ <input type="text" id="M" name="add"  /><BR>
+ 
+    </div>
+  </td>
+ </TR>
+<TR>
+ <TD>
+   <div>
+    <label for="des">
+ City</label><font color="red">*</font></TD><TD>
+  <input type="text" id="des" name="city"  />
+   </div>
+   </td> 
+ </TR>
+<TR>
+  <TR>
+    <TD>
+      <div><label for="ph">
+ PHONE<font color="red">*</font> </label>
+   </TD>
+     <TD>
+ <input type="number" id="ph" name="phone" required><br><BR>
+   </div>
+    </td> 
+   </TR>
+   <TR>
+    <TD>
+      <div><label for="ph">
+ Percentage<font color="red">*</font> </label>
+   </TD>
+     <TD>
+ <input type="number" id="ph" name="per" required><br><BR>
+   </div>
+    </td> 
+   </TR>
+ <TD>
+<input type="Submit" name="Submit" id="Submit">
+  </td>
+   <TD>
+<button><a href="CRUD.html" >Menu</a></button>
+  </td>
+ </TR>
+</form>
+
+
+
+
+</TABLE>
+</body>
+</html>
