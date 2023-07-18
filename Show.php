@@ -1,17 +1,7 @@
 
 
 <?php
-$server="localhost";
-$user="myadmin";
-$pass="Ayush068@";
-$db="student";
-
-$con=new mysqli($server,$user,$pass,$db);
-
-
-if ($con->connect_error) {
-  die("Connection failed: " . mysqli_connect_error()); 
-}
+include 'connection.php';
 
 $fetchData= fetch_data($con);
 // fetch query
@@ -100,11 +90,12 @@ body{
 			<th>id</th>
             <th>FirstName</th>
 			<th>LastName</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Phone</th>
-			<th>Gender</th>
-			<th>Designation</th>
+            <th>dob</th>
+            <th>parents_name</th>
+            <th>address</th>
+			<th>city</th>
+			<th>phone</th>
+      <th>percentage</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
