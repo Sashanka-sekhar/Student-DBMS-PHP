@@ -85,16 +85,17 @@ body{
          
             </div>
     <table border="1" align="center">
-        <tr>
+    <tr>
             <th>S.N</th>
 			<th>id</th>
             <th>FirstName</th>
 			<th>LastName</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Phone</th>
-			<th>Gender</th>
-			<th>Designation</th>
+            <th>dob</th>
+            <th>parents_name</th>
+            <th>address</th>
+			<th>city</th>
+			<th>phone</th>
+      <th>percentage</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
